@@ -1,0 +1,25 @@
+TO print Numbers from 10 to 50
+
+
+
+import java.util.Scanner;
+
+public class PrintNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Enter the starting number (should be 10): ");
+        int start = scanner.nextInt();
+        
+        System.out.println("Enter the ending number (should be 50): ");
+        int end = scanner.nextInt();
+        
+        if (start == 10 && end == 50) {
+            for (int i = start; i <= end; i++) {
+                System.out.println(i);
+            }
+        } else {
+            System.out.println("Please enter the correct starting and ending numbers (10 and 50).");
+        }
+    }
+}
